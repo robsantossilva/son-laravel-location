@@ -1,0 +1,26 @@
+{
+    "name": "robsantossilva/son-laravel-location",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robson Silva",
+            "email": "robsantossilva@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Modules\\Location\\": "./"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Location\\Providers\\LocationServiceProvider"
+            ],
+            "aliases": {
+                "Location": "Modules\\Location\\Facades\\Location"
+            }
+        }
+    }
+}
